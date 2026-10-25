@@ -1,0 +1,39 @@
+:root {
+  --bg: #f6f4f1;
+  --ink: #15151a;
+  --muted: #5d5d66;
+  --accent: #ff6b4a;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+.skip {
+  position: absolute; left: -999px; top: 8px; z-index: 20;
+  background: var(--ink); color: #fff; padding: 8px 12px; border-radius: 8px;
+}
+.skip:focus { left: 8px; }
+
+/* Шапка */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 5vw;
+  background: rgba(246, 244, 241, 0.92);
+  backdrop-filter: blur(8px);
+}
+.brand {
+  display: flex; gap: 10px; align-items: center;
+  color: var(--ink); text-decoration: none;
+  font-weight: 800; letter-spacing: .
