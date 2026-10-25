@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WONDERLAND — стилизованные 3D-фигурки пар в подарок</title>
+  <meta name="description" content="WONDERLAND — персонализированные стилизованные 3D-фигурки пар. Безопасная печать на 3D-принтере, подарочная упаковка и прозрачный прогресс создания каждой фигурки.">
+  <link rel="canonical" href="https://USERNAME.github.io/wonderland-landing/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WONDERLAND — стилизованные фигурки пар">
+  <meta property="og:description" content="Подарочные 3D-миниатюры пар в стилизованном дизайне. Персонализация и безопасная печать.">
+  <meta property="og:url" content="https://USERNAME.github.io/wonderland-landing/">
+  <meta property="og:image" content="https://USERNAME.github.io/wonderland-landing/assets/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WONDERLAND — на главную">
+      <svg class="print-head-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="10" y="6" width="28" height="14" rx="3"/>
+        <rect x="18" y="20" width="12" height="6"/>
+        <rect x="6" y="26" width="36" height="12" rx="4"/>
+        <circle cx="24" cy="38" r="3"/>
+      </svg>
+      <span>WONDERLAND</span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="#gallery">Ракурсы</a>
+      <a href="#order">Заказ</a>
+      <a href="#faq">FAQ</a>
+      <a href="#delivery">Доставка</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Ваша пара — в стильной миниатюре</h1>
+      <p>Подарочные 3D-фигурки в стилизованном дизайне. Пропорции сохранены, персонализация — под вас, печать — безопасная и аккуратная.</p>
+      <a class="btn" href="#order">Заказать фигурку</a>
+    </section>
+
+    <section id="showcase" aria-labelledby="showcase-title">
+      <div class="stage">
+        <h2 id="showcase-title" class="visually-hidden">3D-сцена с фигурками</h2>
+        <div class="print-head" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><use href="#icon-head"/></svg>
+        </div>
+        <canvas id="scene" role="img"
+          aria-label="Три стилизованные фигурки пар на чёрном подиуме с надписью WONDERLAND. Прокрутите страницу, чтобы увидеть фигурки с разных сторон."></canvas>
+        <p class="scroll-hint">Прокрутите вниз ↓</p>
+        <nav class="figure-list" aria-label="Фигурки на сцене">
+          <button type="button" data-figure="pair-1">Пара №1 — ход работ</button>
+          <button type="button" data-figure="pair-2">Пара №2 — ход работ</button>
+          <button type="button" data-figure="pair-3">Пара №3 — ход работ</button>
+        </nav>
+      </div>
+    </section>
+
+    <section id="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Четыре ракурса</h2>
+      <p>Выберите ракурс — сцена плавно повернётся к нужной стороне фигурки.</p>
+      <div class="views">
+        <button type="button" data-view="0">Фронтальный вид</button>
+        <button type="button" data-view="1">Правый профиль</button>
+        <button type="button" data-view="2">Задний вид</button>
+        <button type="button" data-view="3">Левый профиль</button>
+      </div>
+    </section>
+
+    <section id="order" aria-labelledby="order-title">
+      <h2 id="order-title">Что вы получаете и как заказать</h2>
+      <div class="grid-2">
+        <article>
+          <h3>Фигурка «Пара»</h3>
+          <p>Высота 12–15 см, PLA/PETG, подарочная коробка, персонализированная табличка с именами и датой.</p>
+          <p class="price">Цена: <span>уточняется</span></p>
+        </article>
+        <ol class="steps">
+          <li>Выберите ракурс и стиль.</li>
+          <li>Пришлите стилизованный концепт или описание.</li>
+          <li>Подтвердите 3D-макет.</li>
+          <li>Печать, постобработка и упаковка.</li>
+          <li>Отправка с трек-номером.</li>
+        </ol>
+      </div>
+      <p class="note">Все изображения — стилизованные концепты. Мы не копируем конкретных людей и не создаём точных копий лиц.</p>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Частые вопросы</h2>
+      <details>
+        <summary>Из какого материала печатаются фигурки?</summary>
+        <p>PLA или PETG. Материал нетоксичный и подходит для подарков.</p>
+      </details>
+      <details>
+        <summary>Сколько времени занимает изготовление?</summary>
+        <p>Обычно 7–10 рабочих дней с момента подтверждения макета.</p>
+      </details>
+      <details>
+        <summary>Можно ли заказать фигурку по фото?</summary>
+        <p>Мы создаём стилизованную интерпретацию, а не точную копию. Фото используется только как ориентир для пропорций и стиля.</p>
+      </details>
+    </section>
+
+    <section id="delivery" aria-labelledby="delivery-title">
+      <h2 id="delivery-title">Доставка и поддержка</h2>
+      <p>Доставка по России от 3 дней. Поддержка: <a href="mailto:hello@example.com">hello@example.com</a>, отвечаем в течение рабочего дня.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 WONDERLAND. Все изображения — стилизованные концепты.</p>
+    <p><a href="#top">Наверх ↑</a></p>
+  </footer>
+
+  <dialog id="progress" aria-labelledby="progress-title">
+    <h3 id="progress-title"></h3>
+    <ol class="progress-steps" aria-live="polite"></ol>
+    <form method="dialog"><button class="btn" type="submit">Закрыть</button></form>
+  </dialog>
+</body>
+</html>
